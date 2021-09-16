@@ -32,7 +32,7 @@ body {
   width: 100%;
   max-width: 991px;
   margin: auto;
-  font-family: Helvetica,Arial,sans-serif;
+  font-family: monospace,sans-serif;
 }
 
 main {
@@ -46,10 +46,10 @@ aside {
   min-width: 300px;
   width: 100%;
   max-width: 300px;
-  padding: 15px 15px;
   background: rgb(71, 126, 78);
 }
-.aside-content {
+.aside-content {  
+  padding: 15px;
   position: sticky;
   top: 0;
 }
@@ -88,7 +88,7 @@ aside {
   position: absolute;
   width: 0;
   right: -15px;
-  border-color: rgb(255, 255, 255, 0.3) #fff rgb(255, 255, 255, 0.3) rgb(255, 255, 255, 0.3);
+  border-color: rgb(255, 255, 255, 0.3) rgb(241 241 239) rgb(255, 255, 255, 0.3) rgb(255, 255, 255, 0.3);
   border-width: 15px;
   border-style: solid;
   border-left: none;
@@ -106,8 +106,26 @@ aside {
   position: absolute;
   width: 0;
   right: -15px;
-  border-color: #ecb830 #fff #ecb830 #ecb830;
+  border-color: #ecb830 rgb(241 241 239) #ecb830 #ecb830;
   border-width: 15px;
   border-style: solid;
   border-left: none;
+}
+
+.contacts-list {
+  list-style: none;
+  margin: 0;
+}
+.contacts-list__item {
+  font-size: 16px;
+  line-height: 30px;
+}
+.contacts-list__item a {
+  color: rgb(241 241 239);
+}
+
+.main-content {
+  padding: 15px;
+  background: rgb(241 241 239);
+  color: #3b3b3b;
 }
