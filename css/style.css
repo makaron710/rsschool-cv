@@ -1,56 +1,113 @@
+/* reset */
+* {
+  box-sizing: border-box;
+}
 figure {
   margin: 0;
 }
+/* /reset */
+
+html {
+  background: rgb(240, 240, 240);
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background: #ecb830;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+a:active {
+  color: #000;
+}
+a:visited {
+  color: #000;
+}
 
 body {
-  width: 96%;
+  width: 100%;
   max-width: 991px;
   margin: auto;
   font-family: Helvetica,Arial,sans-serif;
 }
-h1 {
-  color: #6470e0;
+
+main {
+  display: flex;
+  margin: 20px 0;
+  background: #fff;
+  box-shadow: 0px 0px 20px 5px rgb(0 0 0 / 20%);
 }
-figure.photo-wrapper {
-  display: block;
-  margin: 20px auto;
-  padding: 5px;
-  width: 250px;
-  height: 250px;
-  border: 3px solid #0366d6;
-  border-radius: 20px;
-}
-.photo {
+
+aside {
+  min-width: 300px;
   width: 100%;
-  border-radius: 15px;
+  max-width: 300px;
+  padding: 15px 15px;
+  background: rgb(71, 126, 78);
 }
-ol li {
-  margin-bottom: 10px;
+.aside-content {
+  position: sticky;
+  top: 0;
 }
-ul li:first-of-type {
-  margin-top: 10px;
+
+.photo-wrapper {
+  width: 215px;
+  height: 215px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  overflow: hidden;
 }
-li {
-  line-height: 1.4;
-  opacity: 0.95;
+.photo-wrapper img {
+  width: 100%;
 }
-a {
-  text-decoration: none;
-  color: #0366d6;
+
+.menu {
+  margin: 0;
+  padding: 0;
 }
-a:visited {
-  color: #0366d6;
+.minu__item {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  list-style: none;
 }
-a:hover {
-  text-decoration: underline;
-}
-footer {
-  text-align: center;
-  line-height: 2;
-}
-footer a {
+.minu__item-link {
+  padding-left: 40px;
   display: block;
+  position: relative;
 }
-footer a img {
-  max-width: 100px;
+.minu__item-link:hover {
+  background: rgb(255, 255, 255, 0.3);
+}
+.minu__item-link:hover::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  right: -15px;
+  border-color: rgb(255, 255, 255, 0.3) #fff rgb(255, 255, 255, 0.3) rgb(255, 255, 255, 0.3);
+  border-width: 15px;
+  border-style: solid;
+  border-left: none;
+}
+
+.minu__item-link.active {
+  background: #ecb830;
+  position: relative;
+}
+.minu__item-link.active:hover {
+  background: #ecb830;
+}
+.minu__item-link.active:hover::after, .minu__item-link.active::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  right: -15px;
+  border-color: #ecb830 #fff #ecb830 #ecb830;
+  border-width: 15px;
+  border-style: solid;
+  border-left: none;
 }
