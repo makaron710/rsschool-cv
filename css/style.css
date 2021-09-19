@@ -2,6 +2,9 @@
 * {
   box-sizing: border-box;
 }
+html {
+  width: 100%;
+}
 figure {
   margin: 0;
 }
@@ -135,7 +138,8 @@ aside {
 .minu__item-link.active:hover {
   background: #ecb830;
 }
-.minu__item-link.active:hover::after, .minu__item-link.active::after {
+.minu__item-link.active:hover::after, 
+.minu__item-link.active::after {
   content: '';
   position: absolute;
   width: 0;
@@ -181,4 +185,108 @@ footer {
 }
 .footer-img img {
   width: 100%;
+}
+
+.close-burger {
+  display: none;
+}
+.m_shadow {
+  opacity: 0;
+  transition: all 0.3s;
+}
+.m_menu-on {
+  display: none;
+}
+
+/* Media */
+@media screen and (max-width: 991px) {
+  .minu__item-link:hover {
+    background: transparent;
+  }
+  .minu__item-link.active::after,
+  .minu__item-link:hover::after {
+    display: none;
+  }
+  h2 {
+    transition: all 0.2s;
+  }
+  section:target h2 {
+    box-shadow: 0 1px 0 0 #ecb830;
+  }
+  aside {
+    position: fixed;
+    top: 0;
+    transition: all 0.3s;
+    z-index: 1;
+  }
+  .aside-content {
+    position: relative;
+  }
+  .close-burger {
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: transparent url("../images/cross.svg") no-repeat center center / 95%;
+    border: none;
+    cursor: pointer;
+  }
+  .m_burger-menu.burger-out {
+    margin-left: -100%;
+  }
+  .m_shadow.visible {
+    opacity: 1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+  }
+  .m_menu-on.visible {
+    display: block;
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    background: rgba(0, 0, 0, 0.6) url('../images/menu.svg') no-repeat center left 10px / 20px;
+    color: #fff;
+    border-radius: 6px;
+    font-family: monospace;
+    font-size: 16px;
+    line-height: 35px;
+    padding-left: 35px;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .main-content {
+    max-width: 100vw;
+  }
+
+  /* scrollbar */
+  html {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 0, 0, 0.6) rgba(0, 0, 0, 0.3);
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+    background: rgba(0, 0, 0, 0.3);
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .main-content {
+    width: 100%;
+  }
+
+  /* for scroll */
+  h1, h2 {
+    padding-top: 45px;
+  }
+  h1, section {
+    margin-bottom: -45px;
+  }
+  section:last-of-type {
+    margin-bottom: 0;
+  }
 }
