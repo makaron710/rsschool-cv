@@ -5,142 +5,118 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="author" content="sharov maxim">
     <title>Resume</title>
+    <!-- code heighlighting -->
+    <link rel="stylesheet" href="css/default.min.css">
+    <script src="js/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <!-- /code heighlighting -->
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <main>
       <aside class="m_burger-menu m_d-none">
         <div class="aside-content">
-          <figure class="photo-wrapper m_d-none">
-            <img src="images/photo.png" alt="my-photo">
-          </figure>
-          <hr>
-          <nav>
-            <ul class="menu">
-              <li class="minu__item"><a href="#name" class="minu__item-link active">My name</a></li>
-              <li class="minu__item"><a href="#info" class="minu__item-link">Information</a></li>
-              <li class="minu__item"><a href="#skils" class="minu__item-link">Skils</a></li>
-              <li class="minu__item"><a href="#code" class="minu__item-link">Code example</a></li>
-              <li class="minu__item"><a href="#experience" class="minu__item-link">Work experience</a></li>
-              <li class="minu__item"><a href="#education" class="minu__item-link">Education</a></li>
-              <li class="minu__item"><a href="#language" class="minu__item-link">Languages</a></li>
-            </ul>
-          </nav>
-          <hr>
-          <h3 class="contacts">
-            <ul class="contacts-list">
-              <li class="contacts-list__item">phone: <a href="tel:79040555412">+7 904 055 54 12</a></li>
-              <li class="contacts-list__item">email: <a href="mailto:sharov-maks@list.ru">sharov-maks@list.ru</a></li>
-              <li class="contacts-list__item">telegram: <a href="https://t.me/makaron710" target="_blank">@makaron710</a></li>
-            </ul>
-          </h3>
+          <div class="aside-content-wrapper">
+            <figure class="photo-wrapper m_d-none">
+              <img src="images/photo.png" alt="my-photo">
+            </figure>
+            <hr>
+            <nav>
+              <ul class="menu">
+                <li class="minu__item"><a href="#name" class="minu__item-link">My name</a></li>
+                <li class="minu__item"><a href="#info" class="minu__item-link">Information</a></li>
+                <li class="minu__item"><a href="#skills" class="minu__item-link">Skills</a></li>
+                <li class="minu__item"><a href="#code" class="minu__item-link">Code example</a></li>
+                <li class="minu__item"><a href="#experience" class="minu__item-link">Work experience</a></li>
+                <li class="minu__item"><a href="#education" class="minu__item-link">Education</a></li>
+                <li class="minu__item"><a href="#language" class="minu__item-link">Languages</a></li>
+              </ul>
+            </nav>
+            <hr>
+            <h3 class="contacts">
+              <ul class="contacts-list">
+                <li class="contacts-list__item">phone: <a href="tel:79040555412">+7 904 055 54 12</a></li>
+                <li class="contacts-list__item">email: <a href="mailto:sharov-maks@list.ru">sharov-maks@list.ru</a></li>
+                <li class="contacts-list__item">telegram: <a href="https://t.me/makaron710" target="_blank">@makaron710</a></li>
+              </ul>
+            </h3>
+          </div>
         </div>
       </aside>
 
       <div class="main-content">
-          <h1>Maxim Sharov</h1>
+          <h1 id="name">Maxim Sharov</h1>
 
           <section id="info">
-            <h2>Intro</h2>
+            <h2>Information</h2>
             <p>
               My main engine of development is the desire to become a specialist in my field. A specialist who will be well paid to make your dreams come true. A specialist who can work from anywhere in the world. I started my journey by studying the layout. For half a year now, I have a second job where I am engaged in site layout. When I realized that I had more or less secured the necessary initial skills, I decided to go to the next stage and ended up here.
             </p>
           </section>
-          <section id="skils">
+
+          <section id="skills">
             <h2>Skills</h2>
             <ul>
-              <li>I know html and css well.</li>
-              <li>I know the basics of js.</li>
-              <li>I use git in my work.</li>
-              <li>I use Sass and scss preprocessors.</li>
-              <li>I have experience with bootstrap 4.</li>
-              <li>I use the BEM methodology in my layout.</li>
-              <li>I write pure code that passes validation.</li>
+              <li>I know <span class="key-word">html</span> and <span class="key-word">css</span> well.</li>
+              <li>I know the basics of <span class="key-word">js</span>.</li>
+              <li>I use <span class="key-word">git</span> in my work.</li>
+              <li>I use <span class="key-word">sass</span> and <span class="key-word">scss</span> preprocessors.</li>
+              <li>I have experience with <span class="key-word">bootstrap 4</span>.</li>
+              <li>I use the <span class="key-word">BEM</span> methodology in my layout.</li>
+              <li>I write pure code that <span class="key-word">passes w3 validation</span>.</li>
               <li>My work looks equally good on all browsers and on all devices.</li>
-              <li>I have a good command of adobe and figma image editors.</li>
-              <li>Familiar with PHP at the level of sending forms to mail.</li>
-              <li>Optimize pages up to 80+ by PageSpeed.</li>
+              <li>I have a good command of <span class="key-word">adobe</span> and <span class="key-word">figma</span> image editors.</li>
+              <li>Familiar with <span class="key-word">PHP</span>.</li>
             </ul>
           </section>
-          You can take a look inside my work on <a href="https://github.com/makaron710">my GitHub account</a>, which I use for training courses. <i>(truth which I all raze not can bring in order)</i>Since I can’t throw away the work done in the team I work for, I suggest you look at the work done in the layout courses:
-          <ul>
-            <li><a href="http://ayverstalshhik.ru/repair-design/">Repair Design</a></li>
-            <li><a href="http://ayverstalshhik.ru/Balashikha_Khleb/">Balashikha Khleb</a></li>
-            <li><a href="http://ayverstalshhik.ru/wooden-bath/">Wooden Bath</a></li>
-          </ul>
-          There is a secondary and higher IT education, which is not worth much. He also completed the “Web-start” course, which gave him initial skills in web development.
-          The English language has not yet been upgraded. And this resume is written with the help of a translator.
 
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+          <section id="code">
+            <h2>Code example</h2>
+            <p>An example of a problem I solved on "Codewars"</p>
+            <blockquote>Define a function that takes one integer argument and returns logical value true or false depending on if the integer is a prime.</blockquote>
+            <p>
+              Solution
+            </p>
+<pre><code class="language-javascript code">function isPrime(num) {
+  if(num == 2) {
+    return true
+  } else {
+    if(num >= 1 && (Math.sqrt(num) % Math.floor(Math.sqrt(num))) != 0) {
+      for(let i = 2; i <= Math.floor(Math.sqrt(num)); i++) {
+        if(num % i == 0){
+          return false;
+        }
+      }
+    } else {
+      return false;
+    }
+  }
+  return true;
+}</code></pre>
+          </section>
+
+          <section id="experience">
+            <h2>Work experience</h2>
+            <p>Since June 2020 I have been working as a layout designer in a team of traffic managers.</p>
+            <p><i>+educational projects</i></p>
+          </section>
+
+          <section id="education">
+            <h2>Education</h2>
+            <p>Graduated from the Institute in the direction of “Applied Informatics”. I took the course “Web-start” from “Glo Academy”. After that, I made several pet-projects mentioned above.</p>
+          </section>
+
+          <section id="language">
+            <h2>Languages</h2>
+            <p>I have an beginner level of English language proficiency (A1). I am currently taking lessons from a tutor.</p>
+          </section>
       </div>
     </main>
     
     <footer>
-      <a href="https://github.com/makaron710">https://github.com/makaron710</a>
-      2021
-      <a href="https://rs.school/js/"><figure><img src="images/rs_school_js.svg" alt=""></figure></a>      
+      <a href="https://github.com/makaron710" target="_blank"><figure class="footer-img"><img src="images/github.png" alt="//github.com/makaron710"></figure></a>
+      <span>2021</span>
+      <a href="https://rs.school/js/" target="_blank"><figure class="footer-img"><img src="images/rs_school_js.svg" alt="//rs.school/js/"></figure></a>
     </footer>
 
     <script src="js/script.js"></script>

@@ -9,6 +9,7 @@ figure {
 
 html {
   background: rgb(240, 240, 240);
+  scroll-behavior: smooth;
 }
 
 hr {
@@ -26,6 +27,23 @@ a:active {
 }
 a:visited {
   color: #000;
+}
+
+blockquote {
+  font-style: italic;
+  position: relative;
+}
+blockquote::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 4px;
+  background: rgb(209, 209, 209);
+  left: -15px;
+}
+
+.key-word {
+  font-weight: bold;
 }
 
 body {
@@ -52,6 +70,22 @@ aside {
   padding: 15px;
   position: sticky;
   top: 0;
+  height: 100vh;
+  overflow-y: scroll;
+  direction: rtl;
+  /* scroll-bar */
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.6) rgba(0, 0, 0, 0.3);
+}
+.aside-content-wrapper {
+  direction: ltr;
+}
+.aside-content::-webkit-scrollbar {
+  width: 10px;
+  background: rgba(0, 0, 0, 0.3);
+}
+.aside-content::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .photo-wrapper {
@@ -76,7 +110,7 @@ aside {
   list-style: none;
 }
 .minu__item-link {
-  padding-left: 40px;
+  padding-left: 30px;
   display: block;
   position: relative;
 }
@@ -115,6 +149,7 @@ aside {
 .contacts-list {
   list-style: none;
   margin: 0;
+  padding-left: 30px;
 }
 .contacts-list__item {
   font-size: 16px;
@@ -128,4 +163,22 @@ aside {
   padding: 15px;
   background: rgb(241 241 239);
   color: #3b3b3b;
+}
+
+.code {
+  background: rgb(236 184 48 / 21%);
+}
+
+footer {
+  padding: 0 30px 30px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.footer-img {
+  width: 100%;
+  max-width: 100px;
+}
+.footer-img img {
+  width: 100%;
 }
