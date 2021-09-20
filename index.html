@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -36,13 +36,12 @@
               </ul>
             </nav>
             <hr>
-            <h3 class="contacts">
-              <ul class="contacts-list">
-                <li class="contacts-list__item">phone: <a href="tel:79040555412">+7 904 055 54 12</a></li>
-                <li class="contacts-list__item">email: <a href="mailto:sharov-maks@list.ru">sharov-maks@list.ru</a></li>
-                <li class="contacts-list__item">telegram: <a href="https://t.me/makaron710" target="_blank">@makaron710</a></li>
-              </ul>
-            </h3>
+            <h3 class="contacts">Contacts</h3>
+            <ul class="contacts-list">
+              <li class="contacts-list__item">phone: <a href="tel:79040555412">+7 904 055 54 12</a></li>
+              <li class="contacts-list__item">email: <a href="mailto:sharov-maks@list.ru">sharov-maks@list.ru</a></li>
+              <li class="contacts-list__item">telegram: <a href="https://t.me/makaron710" target="_blank">@makaron710</a></li>
+            </ul>            
           </div>
         </div>
       </aside>
@@ -85,7 +84,7 @@
     return true
   } else {
     if(num >= 1 && (Math.sqrt(num) % Math.floor(Math.sqrt(num))) != 0) {
-      for(let i = 2; i <= Math.floor(Math.sqrt(num)); i++) {
+      for(let i = 2; i &lt;= Math.floor(Math.sqrt(num)); i++) {
         if(num % i == 0){
           return false;
         }
