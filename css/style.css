@@ -169,6 +169,25 @@ aside {
   color: #3b3b3b;
 }
 
+.exp-projects {
+  display: flex;
+  justify-content: space-evenly;
+}
+.proj {
+  width: 30%;
+}
+.proj__proj-link, 
+.proj__img {
+  width: 100%;
+}
+.proj__title,
+.proj__gh-link {
+  text-align: center;
+}
+.proj__gh-link {
+  text-decoration: underline;
+}
+
 .code {
   background: rgb(236 184 48 / 21%);
 }
@@ -288,5 +307,15 @@ footer {
   }
   section:last-of-type {
     margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .exp-projects {
+    flex-direction: column;
+    align-items: center;
+  }
+  .proj {
+    width: 80%;
+    margin-bottom: 30px;
   }
 }
